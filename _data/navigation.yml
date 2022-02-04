@@ -1,12 +1,32 @@
-# main links
+# main links links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  #- title: "About"
+  #  url: https://mmistakes.github.io/minimal-mistakes/about/
+  - title: "Categories"
+    url: /categories/
+  - title: "Tags"
+    url: /tags/
+github:
+  - title: Github 블로그 만들기
+    children:
+      - title: "Github 가입하기 및 Repository 설정"
+        url: /github/how_to_make_git_hub_blog_01/
+      - title: "jekyll 디렉토리 구조"
+        url: /github/how_to_make_git_hub_blog_02/
+      - title: "Disqus 연결하기"
+        url: /github/how_to_make_git_hub_blog_03/
+designPattern:
+  - title: C# 디자인 패턴
+    children:
+      - title: "디자인 패턴의 종류"
+        url: /c%23/design%20pattern/DesignPatterns/
+      - title: "Factory Method"
+        url: /c%23/design%20pattern/01_Factory_Method/
+      - title: "Abstract Factory"
+        url: /c%23/design%20pattern/02_Abstract_Factory/
+      - title: "Builder"
+        url: /c%23/design%20pattern/03_Builder/
+      - title: "Prototype"
+        url: /c%23/design%20pattern/04_Prototype/
+      - title: "Singleton"
+        url: /c%23/design%20pattern/05_Singleton/
