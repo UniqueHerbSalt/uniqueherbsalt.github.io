@@ -30,3 +30,10 @@ designPattern:
         url: /c%23/design%20pattern/04_Prototype/
       - title: "Singleton"
         url: /c%23/design%20pattern/05_Singleton/
+accountBookProject:
+  - title: 가계부 프로젝트
+    children:
+      - title: 시작하기전
+        url: /project/AccountBook_Proejct_00/
+      - title: Spring Boot 시작-설치
+        url: /project/AccountBook_Proejct_01/
