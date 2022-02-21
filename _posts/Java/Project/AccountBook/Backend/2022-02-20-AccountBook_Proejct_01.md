@@ -21,17 +21,17 @@ SpringBoot의 시작부터 진행하려고 한다. SpringBoot를 아래와 같�
 
 #### 1. 이클립스에 STS 4.x 설치  
 Eclipse에 STS 4.x를 설치해야 SpringBoot 이용이 가능하다.  
-![UML]({{'/assets/images/posts/Project/AccountBook/post_01_001.png'| relative_url }})  
+![01]({{'/assets/images/posts/Project/AccountBook/post_01_001.png'| relative_url }})  
 [Help->Eclipse Marketplace]  
   
 Find에 "Spring"을 입력 후 엔터를 입력한다. 그후에 Install버튼을 눌려 설치를 진행한다.  
-![UML]({{'/assets/images/posts/Project/AccountBook/post_01_002.png'| relative_url }})  
+![02]({{'/assets/images/posts/Project/AccountBook/post_01_002.png'| relative_url }})  
   
-![UML]({{'/assets/images/posts/Project/AccountBook/post_01_003.png'| relative_url }})  
+![03]({{'/assets/images/posts/Project/AccountBook/post_01_003.png'| relative_url }})  
   
-![UML]({{'/assets/images/posts/Project/AccountBook/post_01_004.png'| relative_url }})  
+![04]({{'/assets/images/posts/Project/AccountBook/post_01_004.png'| relative_url }})  
   
-![UML]({{'/assets/images/posts/Project/AccountBook/post_01_005.png'| relative_url }})  
+![05]({{'/assets/images/posts/Project/AccountBook/post_01_005.png'| relative_url }})  
 [설치완료 후 재실행]
 
 #### 2. Oracle JDK 11버전 설치  
