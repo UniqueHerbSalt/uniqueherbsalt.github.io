@@ -15,18 +15,22 @@ sidebar:
 프로젝트를 JPA로 구성하기로 하였으니 이참에 JPA에 대해서 학습하기로 했다.
   
 ***
-> ### JPA?  
+> ## JPA?  
+
 JPA, Java Persistence API의 준말이다. 영어 단에서 느껴지듯이 영속성에 관련된 API인거 같다.  
 JPA는 자바에서 ORM, Obejct-Relational Mapping 이라는 기술 표준으로 사용되는 인터페이스의 모음이다.  
 실제로 구현된것이 아니라 구현된 클래스와 매핑을 해주기 위해서 사용되는 프레임워크 이다.  
 대표적인 오픈소스로 Hibernate가 있다.  
 <div align="center">
-![01]({{'/assets/images/posts/Project/AccountBook/post_03_001.jpg'| relative_url }})  
+<img src="/assets/images/posts/Project/AccountBook/post_03_001.jpg" 
+     srcset="/assets/images/posts/Project/AccountBook/post_03_001.jpg 200w,
+             /assets/images/posts/Project/AccountBook/post_03_001.jpg 400w"
+             sizes="(min-width: 400px) 200px, 50vw" alt="01">  
 </div>
   
-위에서 서술한 ORM은 무엇인가?  
+> ## ORM?  
   
-> ### ORM?  
+위에서 서술한 ORM은 무엇인가?  
 우리가 일반적으로 알고 있는 애플리케이션 Class와 RDB(Relational DataBase)의 테이블을 매핑(연결)한다는 뜻이며, 기술적으로는 어플리케이션의 객체를 RDB 테이블에 자동으로 영속화 해주는 것이라고 보면된다.  
   
 왜 사용하는 것일까?
@@ -44,12 +48,15 @@ JPA는 자바에서 ORM, Obejct-Relational Mapping 이라는 기술 표준으로
   - 러닝 커브 발생
   
 <div align="center">
-![02]({{'/assets/images/posts/Project/AccountBook/post_03_002.png'| relative_url }})  
+<img src="/assets/images/posts/Project/AccountBook/post_03_002.png" alt="02">  
+<br>
 Interface....  
 </div>
+<br>
 
 
-> ### Why JPA?  
+> ## Why JPA?  
+  
 단순하게 요즘 사람들이 많이 쓰는 프레임워크라서? 물론 이것도 이유중에 하나가 될수도 있다. 사람들이 많이 쓰는 만큼 성능 검증이 확실히 되었다는 소리일꺼니까?  
   
 하지만 정확히 왜 JPA를 써야하는지 확인해보자.  
@@ -58,9 +65,11 @@ JPA는 반복적인 CRUD SQL을 처리해준다. JPA는 매핑된 관계를 이�
 JPA를 사용하여 얻을 수 있는 가장 큰 것은 SQL아닌 객체 중심으로 개발할 수 있다는 것이다. 이에 따라 당연히 생산성이 좋아지고 유지보수도 수월하다. 또한 JPA는 패러다임의 불일치도해결하였다. 예를 들면 JAVA에서는 **부모클래스**와 **자식클래스**의 관계 즉, **상속관계**가 존재하는데 데이터베이스에서는 이러한 객체의 상속관계를 지원하지 않는다(상속 기능을 지원하는 DB도 있지만 객체 상속과는 다름). 이런 상속관계를 JPA는 아래와 같은 방식으로 해결하였다.  
    
 <div align="center">
-![03]({{'/assets/images/posts/Project/AccountBook/post_03_003.png'| relative_url }})  
+<img src="/assets/images/posts/Project/AccountBook/post_03_003.png" alt="03">
+<br>  
 [출처 : 자바 ORM 표준 프로그래밍]
 </div>
+<br>
   
 위의 구조에서 만약 Album 클래스를 저장한다고 가정해보자.
 
@@ -94,9 +103,11 @@ SELECT I.*, A.*
 위와 같이 상속관계에 대한 접근도 제공해주는데 객체지향에는 **연관관계**라는 것도 있다. 코드로 따지면 **Class에서 또 다른 Class Type을 필드 변수로 가지고 있는것**이다. 객체관계와 이를 테이블 구조로 나타낸 아래의 그림을 보도록하자.
   
 <div align="center">
-![03]({{'/assets/images/posts/Project/AccountBook/post_03_004.png'| relative_url }})  
+<img src="/assets/images/posts/Project/AccountBook/post_03_004.png" alt="04">
+<br>
 [출처 : 자바 ORM 표준 프로그래밍]
 </div>  
+<br>
   
 위의 그림은 Member 클래스가 Team 타입의 team 필드 변수를 가지고 있는 형태인데, 코드로 나타내면 아래와 같다.
   
@@ -156,16 +167,26 @@ SELECT M.*, T.*
  **- 저장 -**
   
 <div align="center">
-![03]({{'/assets/images/posts/Project/AccountBook/post_03_005.png'| relative_url }})  
+<img src="/assets/images/posts/Project/AccountBook/post_03_005.png" 
+     srcset="/assets/images/posts/Project/AccountBook/post_03_005.png 300w,
+             /assets/images/posts/Project/AccountBook/post_03_005.png 400w"
+             sizes="(min-width: 400px) 250px, 50vw" alt="05">  
+<br>
 [출처 : https://ultrakain.gitbooks.io/jpa/content/chapter1/chapter1.3.html]
 </div>  
+<br>
 
  **- 조회 -**
   
 <div align="center">
-![03]({{'/assets/images/posts/Project/AccountBook/post_03_006.png'| relative_url }})  
+<img src="/assets/images/posts/Project/AccountBook/post_03_006.png" 
+     srcset="/assets/images/posts/Project/AccountBook/post_03_006.png 300w,
+             /assets/images/posts/Project/AccountBook/post_03_006.png 400w"
+             sizes="(min-width: 400px) 250px, 50vw" alt="05">  
+<br>
 [출처 : https://ultrakain.gitbooks.io/jpa/content/chapter1/chapter1.3.html]
 </div>  
+<br>
   
 [글의 전체적인 출처 : https://dbjh.tistory.com/77]  
   

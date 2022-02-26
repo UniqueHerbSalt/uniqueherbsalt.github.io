@@ -37,3 +37,7 @@ accountBookProject:
         url: /project/AccountBook_Proejct_00/
       - title: Spring Boot 시작-설치
         url: /project/AccountBook_Proejct_01/
+      - title: Spring Boot 시작-생성
+        url: /project/AccountBook_Proejct_02/
+      - title: Spring Boot 시작-JPA
+        url: /project/AccountBook_Proejct_03/
